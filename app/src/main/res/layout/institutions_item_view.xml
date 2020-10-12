@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/institutions_item_lin"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/institutions_item_id"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/institutions_item_work"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/institutions_item_zzb"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/institutions_item_fzb"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/institutions_item_zcb"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/institutions_item_zzr"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/institutions_item_fzr"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/institutions_item_zcr"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <RelativeLayout
+        android:layout_width="45dp"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/institutions_item_zzcb"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/institutions_item_zzc"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <RelativeLayout
+        android:layout_width="45dp"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/institutions_item_fzcb"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/institutions_item_fzc"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <RelativeLayout
+        android:layout_width="45dp"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/institutions_item_zccb"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/institutions_item_zcc"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

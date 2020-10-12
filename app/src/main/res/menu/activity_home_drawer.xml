@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all"
+            android:checked="true"
+            android:title="综&#160;&#160;&#160;合&#160;&#160;&#160;查&#160;&#160;&#160;询" />
+        <item
+            android:id="@+id/nav_edit"
+            android:title="干部编制情况" />
+        <item
+            android:id="@+id/nav_age"
+            android:title="年&#160;&#160;&#160;龄&#160;&#160;&#160;结&#160;&#160;&#160;构" />
+        <item
+            android:id="@+id/nav_sex"
+            android:layout_width="wrap_content"
+            android:title="性&#160;&#160;&#160;别&#160;&#160;&#160;结&#160;&#160;&#160;构" />
+    </group>
+
+    <!-- <item android:title="编制情况">
+         <menu>
+             <item
+                 android:id="@+id/nav_edit"
+                 android:title="干部编辑情况" />
+             <item
+                 android:id="@+id/nav_age"
+                 android:title="年&#160;&#160;&#160;龄&#160;&#160;&#160;结&#160;&#160;&#160;构" />
+             <item
+                 android:id="@+id/nav_sex"
+                 android:layout_width="wrap_content"
+                 android:title="性&#160;&#160;&#160;别&#160;&#160;&#160;结&#160;&#160;&#160;构" />
+         </menu>
+     </item>-->
+
+</menu>

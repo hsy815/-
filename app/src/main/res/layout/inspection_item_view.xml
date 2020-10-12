@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inspection_item_lin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/inspection_item_id"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/coloText"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/inspection_item_name"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/coloText"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/inspection_item_work"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/coloText"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/inspection_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxWidth="130dp"
+        android:minWidth="90dp"
+        android:textColor="@color/coloText"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/inspection_item_house"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/coloText"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/inspection_item_stock"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxWidth="130dp"
+        android:minWidth="90dp"
+        android:textColor="@color/coloText"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/inspection_item_company"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/coloText"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/inspection_item_petition"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/coloText"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/inspection_item_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/coloText"
+        android:textSize="12sp" />
+
+</LinearLayout>

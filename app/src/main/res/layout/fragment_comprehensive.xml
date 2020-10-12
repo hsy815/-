@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <ScrollView
+        android:id="@+id/main_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--单位-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="单&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位："
+                        android:textColor="@color/coloText"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/main_work_unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="单位名称"
+                        android:imeOptions="actionDone"
+                        android:maxLength="100"
+                        android:textColor="@color/coloText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <!--姓名-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1.1"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名："
+                        android:textColor="@color/coloText"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/main_full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="姓名"
+                        android:imeOptions="actionDone"
+                        android:maxLength="5"
+                        android:maxLines="1"
+                        android:textColor="@color/coloText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!--选择性别-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="性&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;别："
+                        android:textColor="@color/coloText"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/main_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/main_sex_nan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="男"
+                            android:textColor="@color/coloText" />
+
+                        <RadioButton
+                            android:id="@+id/main_sex_nv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="女"
+                            android:textColor="@color/coloText" />
+
+                        <RadioButton
+                            android:id="@+id/main_sex_all"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="全部"
+                            android:textColor="@color/coloText" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--曾工作单位-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1.8"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="曾工作单位："
+                        android:textColor="@color/coloText"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/main_old_work_unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="曾单位名称"
+                        android:imeOptions="actionDone"
+                        android:maxLength="100"
+                        android:textColor="@color/coloText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!--机关乡镇-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="机关乡镇："
+                        android:textColor="@color/coloText"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/main_region"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/main_region_organs"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="机关单位"
+                            android:textColor="@color/coloText" />
+
+                        <RadioButton
+                            android:id="@+id/main_region_towns"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="镇乡街道"
+                            android:textColor="@color/coloText" />
+
+                        <RadioButton
+                            android:id="@+id/main_region_all"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="不限"
+                            android:textColor="@color/coloText" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <!--出生年月-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="出生年月："
+                    android:textColor="@color/coloText"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp">
+
+                    <EditText
+                        android:id="@+id/main_start_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请&#160;&#160;&#160;输&#160;&#160;&#160;入"
+                        android:imeOptions="actionDone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:textColor="@color/coloText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-40dp"
+                        android:gravity="center_vertical"
+                        android:text="至"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/main_end_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="请&#160;&#160;&#160;输&#160;&#160;&#160;入"
+                        android:imeOptions="actionDone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:textColor="@color/coloText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!--政治面貌-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="政治面貌："
+                        android:textColor="@color/coloText"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@android:color/white"
+                        android:orientation="horizontal"
+                        android:paddingRight="15dp">
+
+                        <CheckBox
+                            android:id="@+id/main_politics_in"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:text="中共党员"
+                            android:textColor="@color/coloText" />
+
+                        <CheckBox
+                            android:id="@+id/main_politics_out"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:text="党外人士"
+                            android:textColor="@color/coloText" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark"
+                android:visibility="gone" />
+
+            <!--在任时长-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="任现职时长："
+                    android:textColor="@color/coloText"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp">
+
+                    <EditText
+                        android:id="@+id/main_start_dept_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="年（默认为0）"
+                        android:imeOptions="actionDone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:textColor="@color/coloText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-40dp"
+                        android:gravity="center_vertical"
+                        android:text="至"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/main_end_dept_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="年（默认为0）"
+                        android:imeOptions="actionDone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:textColor="@color/coloText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="任现职时长："
+                    android:textColor="@color/coloText"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp">
+
+                    <EditText
+                        android:id="@+id/main_start_duty_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="年（默认为0）"
+                        android:imeOptions="actionDone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:textColor="@color/coloText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-40dp"
+                        android:gravity="center_vertical"
+                        android:text="至"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/main_end_duty_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="年（默认为0）"
+                        android:imeOptions="actionDone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:textColor="@color/coloText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark"
+                android:visibility="gone" />
+
+            <!--学历-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="学&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;历："
+                    android:textColor="@color/coloText"
+                    android:textSize="16sp" />
+
+
+                <CheckBox
+                    android:id="@+id/main_edudegree_ss"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="硕士及以上"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:id="@+id/main_edudegree_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="本科"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:id="@+id/main_edudegree_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="大专"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:id="@+id/main_edudegree_dx"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="大专以下"
+                    android:textColor="@color/coloText" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <!--全日制教育-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="全&#160;&#160;日&#160;&#160;制："
+                    android:textColor="@color/coloText"
+                    android:textSize="16sp" />
+
+
+                <CheckBox
+                    android:id="@+id/main_fullmajor_ss"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="硕士及以上"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:id="@+id/main_fullmajor_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="本科"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:id="@+id/main_fullmajor_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="大专"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:id="@+id/main_fullmajor_dx"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="大专以下"
+                    android:textColor="@color/coloText" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <!--在职教育-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="在职教育："
+                    android:textColor="@color/coloText"
+                    android:textSize="16sp" />
+
+
+                <CheckBox
+                    android:id="@+id/main_schoolmajor_ss"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="硕士及以上"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:id="@+id/main_schoolmajor_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="本科"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:id="@+id/main_schoolmajor_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="大专"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:id="@+id/main_schoolmajor_dx"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="大专以下"
+                    android:textColor="@color/coloText" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <!--身份类别-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="身份类别："
+                    android:textColor="@color/coloText"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/main_ldentity_g"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="公务员"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:id="@+id/main_ldentity_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="参公"
+                    android:textColor="@color/coloText" />
+
+
+                <CheckBox
+                    android:id="@+id/main_ldentity_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="事业"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:id="@+id/main_ldentity_z"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="职工"
+                    android:textColor="@color/coloText" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <!--职级-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="职&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;级："
+                    android:textColor="@color/coloText"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/main_dutydegree_z"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="正科"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:id="@+id/main_dutydegree_zj"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="正科级"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:id="@+id/main_dutydegree_f"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="副科"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:id="@+id/main_dutydegree_fj"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="副科级"
+                    android:textColor="@color/coloText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="职&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;级："
+                    android:textColor="@color/coloText"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <CheckBox
+                    android:id="@+id/main_dutydegree_zz"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="中层正职"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:id="@+id/main_dutydegree_zf"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="中层副职"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="中层正职"
+                    android:textColor="@color/coloText"
+                    android:visibility="invisible" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="中层副职"
+                    android:textColor="@color/coloText"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <!--查询内容-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="查询内容："
+                    android:textColor="@color/coloText"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/main_major"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入查询内容"
+                    android:imeOptions="actionDone"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textColor="@color/coloText"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp">
+
+                <CheckBox
+                    android:id="@+id/main_major_table_zy"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="专业"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:id="@+id/main_major_table_tc"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="特长"
+                    android:textColor="@color/coloText" />
+
+                <CheckBox
+                    android:id="@+id/main_major_table_fg"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="分管工作和重点工程"
+                    android:textColor="@color/coloText" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/main_clean"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:text="清&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;除"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/main_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:text="查&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;询"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

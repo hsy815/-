@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/family_lin"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/family_item_chengwei"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/coloText"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/family_item_xingming"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/coloText"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/family_item_chushengriqi"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/coloText"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/family_item_mianmiao"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/coloText"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/family_item_danwei_zhiwu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/coloText"
+        android:textSize="12sp" />
+</LinearLayout>
